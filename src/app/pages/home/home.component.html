@@ -1,0 +1,37 @@
+<header>
+    <div class="header-content d-flex">
+        <div>
+            <h1>Sharakah</h1>
+            <p>Your gate to business world</p>
+        </div>
+    </div>
+    <img src="../../../assets/images/handshake.jpg" width="100%" height="520px" alt="">
+</header>
+<div class="categories py-5">
+    <div class="container">
+        <div class="categories-title">
+            <p>what we build</p>
+            <h1>Our Projects Categories</h1>
+        </div>
+        <div class="row">
+            <div class=" col-lg-4 col-md-6 col-sm-12" *ngFor="let category of categories">
+                <div class="col-12 category-item">
+                    {{category}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="join-now p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-md-12">
+                <p>join Us</p>
+                <h2>Have any project in mind! feel free to join us.</h2>
+            </div>
+            <div class="col-lg-2 col-md-12 d-flex justify-content-center my-2 align-items-center">
+                <div class="register-link" (click)="navigationToRegister()">Join Now</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+.title {
+    text-align: center;
+
+    p {
+        margin-bottom: 4px;
+    }
+}
+
+.project {
+    border: 2px solid #09335d;
+    border-radius: 20px;
+    position: relative;
+
+    .name {
+        font-weight: bolder;
+        font-size:24px;
+        max-width: 180px;
+        text-transform: capitalize;
+    }
+
+    .category {
+        background-color: #09335d;
+        color: white;
+        border-radius: 20px;
+        width: fit-content;
+        max-width: 125px;
+        padding: 2px 10px;
+        position: absolute;
+        top: 26px;
+        right: 25px;
+        font-size: 12px;
+    }
+}
+.money-table {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.table-dark-clr {
+    background-color: #09335d;
+    color: white;
+}
+.table-light-clr{
+    background-color: #157feb;
+    color: white;
+}
+.partener-btn{
+    color: white;
+    background-color: #157feb;
+}
+.partener-btn:hover{
+    background-color: #09335d;
+}
+.details{
+    font-weight: bold;
+}

@@ -1,0 +1,38 @@
+<div class="title p-5">
+    <p>our on going</p>
+    <h1>Projects</h1>
+</div>
+<div class="projects mb-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let project of projects">
+                <div class="col-12 p-4 my-3 project">
+                    <div class="name">{{project.name}}</div>
+                    <div class="category">{{project.category}}</div>
+                    <table class="money-table table my-4">
+                        <tbody class="">
+                            <tr>
+                                <td class="table-light-clr">money needed:</td>
+                                <td class="table-light-clr">{{project.moneyNeeded}}</td>
+                            </tr>
+                            <tr>
+                                <td class="table-dark-clr">money collected:</td>
+                                <td class="table-dark-clr">{{project.moneyCollected}}</td>
+                            </tr>
+                            <tr class="table-dark">
+                                <td>project target:</td>
+                                <td>{{project.totalTarget}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div><span class="details">Place:</span> {{project.place}}</div>
+                    <div><span class="details">number of parteners:</span> {{project.numberOfParteners}}/{{project.maxNumberOfParteners}}</div>
+                    <div class="d-flex justify-content-center">
+                        <div class="btn btn-success my-3 me-2" (click)="navigationToDetails(project.id)"> More Details</div>
+                        <div class="btn partener-btn my-3"> Be Partener</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
