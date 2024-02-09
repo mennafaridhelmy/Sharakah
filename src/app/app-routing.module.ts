@@ -14,8 +14,7 @@ import { TermsAndPolicyComponent } from './pages/terms-and-policy/terms-and-poli
 import { ProjectDetailsComponent } from './pages/project-details/project-details.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' }, //default route
-  { path: 'home', component: HomeComponent },
+  { path: '', pathMatch: 'full', component: HomeComponent }, //default route
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'projects', component: ProjectsComponent },
