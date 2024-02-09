@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/about-us",
+    "/contact-us",
+    "/create-project",
+    "/home",
+    "/login",
+    "/projects",
+    "/register",
+    "/terms-and-policy"
+  ]
+}
